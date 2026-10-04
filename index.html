@@ -3,86 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CEYO CLOTHING | Modern Streetwear</title>
+<meta name="description" content="CEYO CLOTHING - Modern Sri Lankan streetwear. Order directly through WhatsApp.">
+<title>CEYO CLOTHING | Wear Your Vibe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="noise"></div>
 <header class="header">
-  <a class="logo" href="#home">CEYO</a>
-  <nav>
-    <a href="#home">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a>
-    <a href="#sizes">Size Guide</a><a href="#about">About</a>
-  </nav>
+  <a class="logo" href="#home">CEYO<span>.</span></a>
+  <nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#sizes">Size Guide</a><a href="#about">About</a></nav>
   <button class="cart-btn" id="cartBtn">Bag <span id="cartCount">0</span></button>
+  <button class="menu-btn" id="menuBtn">☰</button>
 </header>
 
+<main>
 <section class="hero" id="home">
-  <div class="hero-copy">
+  <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
+  <div class="hero-copy reveal">
     <p class="eyebrow">CEYO CLOTHING / 2026 COLLECTION</p>
-    <h1>EVERYDAY<br><span>MADE BETTER.</span></h1>
-    <p>Clean silhouettes. Easy fits. Streetwear made for your everyday.</p>
-    <a class="shop-btn" href="#shop">SHOP COLLECTION</a>
+    <h1>WEAR YOUR<br><span>VIBE.</span></h1>
+    <p class="hero-desc">Clean silhouettes. Easy fits. Streetwear made for your everyday.</p>
+    <div class="hero-actions"><a class="shop-btn" href="#shop">SHOP COLLECTION <span>→</span></a><a class="ghost-btn" href="#about">OUR STORY</a></div>
+    <div class="hero-note"><span></span> NEW DROP / LIMITED PIECES</div>
   </div>
+  <div class="hero-visual reveal-delay">
+    <div class="visual-ring"></div>
+    <div class="hero-card"><img src="product-1.jpg" alt="CEYO clothing"><div class="hero-card-label"><span>CEYO</span><b>01 / 06</b></div></div>
+    <div class="floating-label label-one">PREMIUM<br>EVERYDAY WEAR</div>
+    <div class="floating-label label-two">SRI LANKA<br>EST. 2026</div>
+  </div>
+  <div class="scroll-hint">SCROLL <span>↓</span></div>
 </section>
 
-<section class="marquee"><span>NEW DROP</span><span>CEYO CLOTHING</span><span>EVERYDAY STYLE</span><span>NEW DROP</span><span>CEYO CLOTHING</span></section>
+<section class="marquee"><div><span>NEW DROP</span><i>✦</i><span>CEYO CLOTHING</span><i>✦</i><span>WEAR YOUR VIBE</span><i>✦</i><span>NEW DROP</span><i>✦</i><span>CEYO CLOTHING</span><i>✦</i></div></section>
 
 <section class="section" id="collections">
-  <div class="section-title"><p class="eyebrow">EXPLORE</p><h2>Shop by category</h2></div>
+  <div class="section-title"><div><p class="eyebrow">EXPLORE</p><h2>Shop by category</h2></div><p class="section-copy">Built around simple pieces that work together, every day.</p></div>
   <div class="category-grid">
-    <a href="#shop" onclick="setCategory('T-Shirts')"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85"><b>T-SHIRTS</b></a>
-    
-    <a href="#shop" onclick="setCategory('Pants')"><img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=900&q=85"><b>PANTS</b></a>
-    
+    <a href="#shop" onclick="setCategory('T-Shirts')" class="category-card"><img src="product-2.jpg" alt="CEYO T-Shirts"><div><span>01</span><b>T-SHIRTS</b><em>EXPLORE →</em></div></a>
+    <a href="#shop" onclick="setCategory('Pants')" class="category-card"><img src="product-5.jpg" alt="CEYO Pants"><div><span>02</span><b>PANTS</b><em>EXPLORE →</em></div></a>
   </div>
 </section>
 
 <section class="section shop" id="shop">
-  <div class="shop-top">
-    <div><p class="eyebrow">CEYO STORE</p><h2>Latest pieces</h2></div>
-    <div class="filters">
-      <button class="filter active" data-cat="All">All</button>
-      <button class="filter" data-cat="T-Shirts">T-Shirts</button>
-      <button class="filter" data-cat="Hoodies">Hoodies</button>
-      <button class="filter" data-cat="Pants">Pants</button>
-      <button class="filter" data-cat="Accessories">Accessories</button>
-    </div>
-  </div>
+  <div class="shop-top"><div><p class="eyebrow">CEYO STORE</p><h2>Latest pieces</h2></div><div class="filters"><button class="filter active" data-cat="All">All</button><button class="filter" data-cat="T-Shirts">T-Shirts</button><button class="filter" data-cat="Pants">Pants</button></div></div>
   <div class="product-grid" id="products"></div>
 </section>
 
-<section class="feature">
-  <div><p class="eyebrow">THE CEYO FIT</p><h2>Simple pieces.<br>Strong style.</h2></div>
-  <p>Designed around versatile everyday looks, with comfortable fits and clean details.</p>
-</section>
+<section class="feature"><div><p class="eyebrow">THE CEYO FIT</p><h2>Simple pieces.<br><span>Strong style.</span></h2></div><p>Designed around versatile everyday looks, comfortable fits and clean details.</p></section>
 
-<section class="section sizes" id="sizes">
-  <p class="eyebrow">FIND YOUR FIT</p><h2>Size guide</h2>
-  <div class="table-wrap">
-  <table><thead><tr><th>Size</th><th>Chest</th><th>Length</th><th>Shoulder</th></tr></thead>
-  <tbody><tr><td>S</td><td>96 cm</td><td>68 cm</td><td>42 cm</td></tr>
-  <tr><td>M</td><td>102 cm</td><td>70 cm</td><td>44 cm</td></tr>
-  <tr><td>L</td><td>108 cm</td><td>72 cm</td><td>46 cm</td></tr>
-  <tr><td>XL</td><td>114 cm</td><td>74 cm</td><td>48 cm</td></tr>
-  <tr><td>XXL</td><td>120 cm</td><td>76 cm</td><td>50 cm</td></tr></tbody></table></div>
-  <p class="muted">Sample guide. Replace these measurements with your actual product measurements before selling.</p>
-</section>
+<section class="section sizes" id="sizes"><p class="eyebrow">FIND YOUR FIT</p><h2>Size guide</h2><div class="table-wrap"><table><thead><tr><th>Size</th><th>Chest</th><th>Length</th><th>Shoulder</th></tr></thead><tbody><tr><td>S</td><td>96 cm</td><td>68 cm</td><td>42 cm</td></tr><tr><td>M</td><td>102 cm</td><td>70 cm</td><td>44 cm</td></tr><tr><td>L</td><td>108 cm</td><td>72 cm</td><td>46 cm</td></tr><tr><td>XL</td><td>114 cm</td><td>74 cm</td><td>48 cm</td></tr><tr><td>XXL</td><td>120 cm</td><td>76 cm</td><td>50 cm</td></tr></tbody></table></div><p class="muted">Sample guide. Replace measurements with your actual product measurements before selling.</p></section>
 
-<section class="about" id="about">
-  <div class="about-photo"><div class="photo-placeholder">YOUR<br>FOUNDER<br>PHOTO</div></div>
-  <div><p class="eyebrow">ABOUT CEYO</p><h2>Built with a local vision.</h2>
-  <p>CEYO CLOTHING brings a clean, modern clothing experience to everyday streetwear.</p>
-  <div class="founder"><b>Founder</b><strong>Mr. Ranshika</strong><span>077 31 29 477</span></div></div>
-</section>
+<section class="about" id="about"><div class="about-photo"><img src="founder.jpg" alt="Mr. Ranshika - Founder of CEYO CLOTHING"><div class="photo-badge">FOUNDER</div></div><div class="about-copy"><p class="eyebrow">ABOUT CEYO</p><h2>More than clothing.<br><span>It's a lifestyle.</span></h2><p>CEYO CLOTHING is built around stylish, comfortable and high-quality everyday fashion. Our goal is simple — give you clean fashion at an affordable price, with quality, trust and customer satisfaction.</p><div class="founder"><span>FOUNDER</span><strong>Mr. Ranshika</strong><small>077 31 29 477</small></div><a class="whatsapp-btn" href="https://wa.me/94773129477?text=Hi%20CEYO%20CLOTHING%2C%20I%20want%20to%20know%20more%20about%20your%20collection." target="_blank" rel="noopener">WHATSAPP US <span>↗</span></a></div></section>
 
-<section class="contact section" id="contact">
-  <p class="eyebrow">CONTACT</p><h2>Let's talk.</h2>
-  <form id="contactForm"><input placeholder="Name" required><input type="tel" placeholder="Phone" required><textarea placeholder="Message" required></textarea><button class="shop-btn">SEND MESSAGE</button></form>
-</section>
+<section class="contact section" id="contact"><p class="eyebrow">CONTACT</p><h2>Let's talk.</h2><p>Questions, custom requests or an order? Message CEYO directly on WhatsApp.</p><a class="shop-btn" href="https://wa.me/94773129477?text=Hi%20CEYO%20CLOTHING%2C%20I%20would%20like%20to%20contact%20you." target="_blank" rel="noopener">MESSAGE ON WHATSAPP →</a></section>
+</main>
 
-<footer><div class="logo">CEYO</div><p>© 2026 CEYO CLOTHING</p></footer>
+<footer><div class="logo">CEYO<span>.</span></div><p>© 2026 CEYO CLOTHING — Wear Your Vibe.</p><a href="https://wa.me/94773129477" target="_blank" rel="noopener">WhatsApp ↗</a></footer>
 
-<aside class="cart" id="cart"><div class="cart-head"><h2>Your Bag</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="total">Total <b>LKR <span id="cartTotal">0</span></b></div></aside>
+<aside class="cart" id="cart"><div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your Bag</h2></div><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div class="total"><span>Total</span><b>LKR <span id="cartTotal">0</span></b></div><button class="checkout-btn" id="checkoutBtn">ORDER ON WHATSAPP →</button><p class="cart-help">Your order details will open in WhatsApp.</p></div></aside>
+<div class="overlay" id="overlay"></div>
+<div class="order-modal" id="orderModal"><button class="modal-close" id="modalClose">×</button><p class="eyebrow">WHATSAPP ORDER</p><h2>Complete your order</h2><div class="form-grid"><input id="customerName" placeholder="Your name" required><input id="customerPhone" type="tel" placeholder="Phone number" required><select id="customerSize"><option value="">Select size</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select><input id="customerColor" placeholder="Color"><textarea id="customerAddress" placeholder="Delivery address" required></textarea></div><button class="checkout-btn" id="sendWhatsApp">SEND ORDER ON WHATSAPP →</button></div>
+
+<a class="wa-float" href="https://wa.me/94773129477?text=Hi%20CEYO%20CLOTHING%2C%20I%20need%20help%20with%20an%20order." target="_blank" rel="noopener" aria-label="WhatsApp CEYO">⌕</a>
 <script src="script.js"></script>
 </body>
 </html>
