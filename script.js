@@ -6,7 +6,13 @@ const products = [
   { name: "CEYO Navy Tee", price: 4350, category: "T-Shirts", image: "product-3.jpg" },
   { name: "CEYO White Oversized Tee", price: 4450, category: "T-Shirts", image: "product-4.jpg" },
   { name: "CEYO Black Cargo Pants", price: 6250, category: "Pants", image: "product-5.jpg" },
-  { name: "CEYO Grey Wide Pants", price: 5950, category: "Pants", image: "product-6.jpg" }
+  { name: "CEYO Grey Wide Pants", price: 5950, category: "Pants", image: "product-6.jpg" },
+  { name: "CEYO Black Cargo Jogger", price: 6250, category: "Pants", image: "product-7.jpg" },
+  { name: "CEYO Grey Wide Fit Pants", price: 5950, category: "Pants", image: "product-8.jpg" },
+  { name: "CEYO Navy Oversized Tee", price: 4350, category: "T-Shirts", image: "product-9.jpg" },
+  { name: "CEYO White Signature Tee", price: 4250, category: "T-Shirts", image: "product-10.jpg" },
+  { name: "CEYO White Classic Tee", price: 4250, category: "T-Shirts", image: "product-11.jpg" },
+  { name: "CEYO Black Graphic Tee", price: 4450, category: "T-Shirts", image: "product-12.jpg" }
 ];
 
 let cart = [];
